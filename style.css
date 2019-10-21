@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=cyrillic');
+
+* {
+    margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    padding-bottom: 10px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+h1, h2 {
+    text-transform: uppercase;
+  
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.gallery-pad{
+    margin: 50px;
+    
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
+}
+
+tr {
+    border: solid 1px black;
+}
+
+td {
+     border: solid 1px black;
+    
+}
+
+
+/* Menu  */
+#menu-checkbox {
+  /* чекбокс скрыт */
+  display: none;
+}
+
+.main-menu {
+  /* пункты меню скрыты */
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li {
+  /* пункты меню расположены вертикально */
+  /* каждый имеет ширину 100% */
+  font-size: 1em;
+  display: block;
+  width: 100%;
+}
+
+.main-menu a {
+  /* немного стилизуем ссылки */
+  display: block;
+  border-bottom: 1px solid #76001e;
+
+  color: #000000;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.active {
+    background-color: #8c0031;
+}
+
+
+.toggle-button {
+  text-align: center;
+  display: block;
+  /* не забываем явно указать каким должен быть курсор */
+  cursor: pointer;
+  background-color: #760021;
+  color: #fff;
+}
+.toggle-button:after {
+  /* получаем данные из атрибута data-open в html */
+  content: attr(data-open);
+  display: block;
+  margin: 10px 0;
+  padding: 10px 30px;
+}
+#menu-checkbox:checked + nav[role="navigation"] .main-menu {
+  /* когда чекбокс активен меню становится видимым */
+  display: block;
+}
+#menu-checkbox:checked + nav[role="navigation"] .toggle-button:after {
+  content: attr(data-close);
+}
+
+
+.slider  {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    height: 500px;
+    overflow:hidden;
+    position:relative;
+  
+}
+
+
+.slider-1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    overflow:hidden;
+    position:relative;
+  
+}
+
+.slider img {
+    width: 100%;
+    min-width: 900px;
+    height: auto;
+}
+
+.wrap-text {
+
+  position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+}
+
+
+
+.wrap-text > div {
+
+  padding: 10px;
+  background: #fff;
+}
+
+
+@media screen and (min-width: 976px) {
+    .toggle-button {
+      /* label скрыт */
+      display: none;
+    }
+    
+    .main-menu {
+      display: block;
+      margin: 0 auto;
+      background-color: #760021;
+      height: 60px;
+    }
+    .main-menu li {
+      /* теги <li> расположены в ряд */
+      width: calc(100% / 5);
+      text-align: center;
+      display: inline-block;
+      margin-right: -4px;
+    padding-top: 10px;
+    }
+    
+a.disable{
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
+    color: #999; /* цвет текста для нективной ссылки */
+}
+    
+    
+    .main-menu a {
+        
+      display: inline-block;
+      margin-right: -4px;
+     
+      font-size: .8em;
+      text-decoration: none;
+      color: #fff;
+      text-transform: none;
+      border-bottom: 0;
+      font-size: 20px;
+    }
+    .main-menu img {
+        height: 50px;
+    }
+    .main-menu a:hover {
+
+        background-color: #8c0031;
+        font-weight: bold;
+        
+    }
+  }
+
+.contacts {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+}
+.info {
+    margin: 50px;
+    border: solid 2px #8c0031;
+    padding: 50px;
+}
+
+/* ФОРМА */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    
+}
+
+
+input {
+    margin-left: 10 px;
+    border: solid 1px #8c0031;
+    padding: 5px;
+    
+}
+
+textarea {
+    resize: none;
+       border: solid 1px #8c0031;
+}
+
+
+.info li {
+    padding: 5px;
+    
+}
+footer {
+    text-align: right;
+    background-color: #750122;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+ 
+}
+
+
+label[for] {
+ cursor: pointer;
+}
+ 
+input[type="checkbox"] {
+ display: none;
+}
+ 
+

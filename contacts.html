@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+        <input type="checkbox" id="menu-checkbox" >
+        <nav role="navigation">
+        <label for="menu-checkbox" class="toggle-button" data-open="Меню" data-close="Закрыть" onclick></label>
+        <ul class="main-menu"><!-- список пунктов меню -->
+            <li><a href="" class="disable">Ателье МОДНИЦА</a></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="gallery.html">Галлерея</a></li>
+            <li><a href="contacts.html" class="active">Контакты</a></li>
+        </ul>
+        </nav>
+    </header>
+  
+    <div class="slider-1"> 
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adc83b3e52163423570ea55a80777e050adb9312fc47256d1abdb0fcde0daacf5&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+   </div>
+    
+    <div class="contacts">
+    <div class="info">
+        <h1>Контактная информация</h1>
+            <div class="otstup">
+            <h2>Юридический адрес</h2>
+            <p>344113, г. Ростов-на-Дону, пр-кт. Космонавтов 27/3</p>
+            <h2>Полное название компании</h2>
+            <p>ООО "Модница"</p>
+            <p>ОГРН: 1137746355152</p>
+            <p>ИНН/КПП: 7708787892/770801001</p>
+            <h2>Телефон</h2>
+            <p>+7 (495) 778-12-86</p>
+            <h2>E-mail</h2>
+            <a href="mailto:kapelka001@ya.ru">kapelka001@ya.ru</a>
+            </div> 
+    </div>
+    
+    <div class="info">
+        <form action="" method="POST">
+           <h1>Связаться с нами</h1>
+            <p>
+                <label>Обращение</label>
+                       <div class="form_radio">
+                
+	            <input id="radio-1" type="radio" name="radio" value="1" checked>
+	            <label for="radio-1">Г-н</label>
+            
+                <input id="radio-2" type="radio" name="radio" value="2">
+                <label for="radio-2">Г-жа</label>
+                </div>
+            </p>
+            <p>
+                <label>Имя</label>
+                <input type="text" name="first_name">
+            </p>
+            <p>
+                <label>Фамилия</label>
+                <input type="text" name="last_name">
+            </p>
+            <p>
+                <label>Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Телефон</label>
+                <input type="tel" name="phone">
+            </p>
+            <p>
+                <label for="">Обращение</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" name="terms">Я согласен(а) с <a href="/terms">условиями использования</a>
+                </label>
+            </p>
+            <p>
+                <button>Отправить</button>
+            </p>
+        </form>
+ 
+       
+        
+    </div>
+   
+    </div>
+    
+      <footer>Созданно в студии KAPLIN <br>  Все права защищены.</footer>
+    
+</body>
+</html>
